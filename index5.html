@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login & Registration Form  </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button> 
+                    <button type="button" class="toggle-btn" onclick="register()">Resister</button>
+                    <div class="social-icons">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+                    <form id="login" class="input-group">
+                        <input type="text" class="input-field" placeholder="Enter user name" required> <br> <br>
+                        <input type="password" class="input-field" placeholder="Enter Password" required> <br> <br>
+                        <input type="checkbox" class="chech-box" id="id1"><label for="id1"><span class="span">Remember me</span></label> <br> <br>
+                        <button type="submit" class="submit-btn">Login</button> <br> <br>
+                     </form>
+                     <form id="register" class="input-group" action="demo.html" name="login form">
+                        <input type="text" class="input-field" placeholder="User Name" required> <br> <br>
+                        <input type="email" class="input-field" placeholder="Enter your mail ID" required> <br> <br>
+                        <input type="password" class="input-field" placeholder="Enter Password" required> <br> <br>
+                        <input type="checkbox" class="chech-box" id="id2"><label for="id2"><span  class="span">I agree to the terms & conditions</span></label> <br> <br>
+                        <button type="submit" class="submit-btn">Register</button> <br> <br> 
+                     </form>
+               
+            </div>
+         </div>
+        <div>
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            function register(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="95px";
+            }
+            function login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0px";
+            }
+        </script>
+    </body>
+</html>
